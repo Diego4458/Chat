@@ -1,0 +1,5 @@
+C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Client.exe.config
+C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Client.exe
+C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Client.pdb
+C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.exe
+C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.pdb

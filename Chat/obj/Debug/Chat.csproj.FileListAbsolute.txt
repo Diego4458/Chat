@@ -1,0 +1,6 @@
+C:\Users\Diego\source\repos\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Users\Diego\source\repos\Chat\Chat\bin\Debug\Chat.exe
+C:\Users\Diego\source\repos\Chat\Chat\bin\Debug\Chat.pdb
+C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.exe
+C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.pdb
