@@ -20,7 +20,7 @@ namespace Chat.Global
             Config_load();
             UdpClient listener = new UdpClient(port);
             IPEndPoint serverep = new IPEndPoint(IPAddress.Parse(ip), port);
-            // log.Debug(String.Format("ip: {0}:{1}", ip, port));
+            log.Debug(String.Format("ip: {0}:{1}", ip, port));
             bool Chat_alive = true;
             while (Chat_alive)
             {

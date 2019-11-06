@@ -23,11 +23,13 @@ namespace Client
             log.Debug(ep.ToString());
             client.Connect(ep);
             Console.WriteLine("Seja Bem Vindo");
+
             while (true)
             {
                 string a =Console.ReadLine();
                 if(a.Length !=0)
                 {
+                    
                     byte[] packet = Encoding.ASCII.GetBytes(a);
                     log.Log("Pacote enviado");
                     client.Send(packet, packet.Length);
