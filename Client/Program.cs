@@ -27,10 +27,10 @@ namespace Client
             {
                 string a =Console.ReadLine();
                 if(a.Length !=0)
-                { 
-                var packet = Encoding.ASCII.GetBytes(a);
-                log.Log("Pacote enviado");
-                client.Send(packet, packet.Length);
+                {
+                    byte[] packet = Encoding.ASCII.GetBytes(a);
+                    log.Log("Pacote enviado");
+                    client.Send(packet, packet.Length);
                 }
             }
 
