@@ -1,12 +1,9 @@
-﻿using System;
-using Chat.Log;
+﻿
+using System;
+using Log;
 using System.Configuration;
-
-using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading;
 
 namespace Chat.Global
 {
@@ -16,11 +13,9 @@ namespace Chat.Global
         public int port;
         public void Listen()
         {
-
             Config_load();
             UdpClient listener = new UdpClient(port);
             IPEndPoint serverep = new IPEndPoint(IPAddress.Parse(ip), port);
-            log.Debug(String.Format("ip: {0}:{1}", ip, port));
             bool Chat_alive = true;
             while (Chat_alive)
             {
@@ -30,7 +25,7 @@ namespace Chat.Global
         }
 
 
-    public delegate void DataReceived(object sender, ReceiveDataArgs args);
+        public delegate void DataReceived(object sender, ReceiveDataArgs args);
 
         public event DataReceived DataReceivedEvent;
         private void RaiseDataReceived(ReceiveDataArgs args)
@@ -54,7 +49,7 @@ namespace Chat.Global
             }
             catch (Exception)
             {
-                log.Error("Erro Ao Tentar Iniciar o Servidor");
+                Logger.Error("Erro Ao Tentar Iniciar o Servidor");
             }
         }
     }

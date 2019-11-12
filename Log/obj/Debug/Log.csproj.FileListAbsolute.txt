@@ -1,0 +1,4 @@
+C:\Users\Diego\source\repos\Chat\Log\bin\Debug\Log.dll
+C:\Users\Diego\source\repos\Chat\Log\bin\Debug\Log.pdb
+C:\Users\Diego\source\repos\Chat\Log\obj\Debug\Log.dll
+C:\Users\Diego\source\repos\Chat\Log\obj\Debug\Log.pdb

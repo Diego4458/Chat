@@ -3,3 +3,7 @@ C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Client.exe
 C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Client.pdb
 C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.exe
 C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.pdb
+C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Log.dll
+C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Log.pdb
+C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.csproj.CopyComplete

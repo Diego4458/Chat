@@ -1,10 +1,7 @@
-﻿using System;
-using Chat.Global;
-using Chat.Log;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Chat.Global;
+using Log;
+using System;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Chat.Packets
 {
@@ -12,8 +9,8 @@ namespace Chat.Packets
     {
         struct users
         {
-            public int port ;
-            public String name ;
+            public int port;
+            public String name;
         }
 
         private users[] usuarios = new users[100];
@@ -26,6 +23,7 @@ namespace Chat.Packets
         private void Packets_DataReceivedEvent(object sender, ReceiveDataArgs args)
         {
             string tex = Encoding.ASCII.GetString(args.ReivedBytes);
+            Logger.Warn(args.ReivedBytes.ToString());
             for (int x = 0; usuarios.Length > x; x++)
             {
                 if (usuarios[x].name == null)
@@ -36,23 +34,23 @@ namespace Chat.Packets
                 }
                 else if (usuarios[x].port == args.port)
                 {
-                    if(tex.Contains("/"))
+                    if (tex.Contains("/"))
                     {
-                        if(tex.Contains("CD"))
+                        if (tex.Contains("CD"))
                         {
                             for (int y = 0; usuarios.Length > y; y++)
                             {
-                                if(usuarios[y].name != null)
-                                { 
-                                Console.WriteLine("{0} = {1}",y.ToString(),usuarios[y].name);
+                                if (usuarios[y].name != null)
+                                {
+                                    Console.WriteLine("{0} = {1}", y.ToString(), usuarios[y].name);
                                 }
                             }
 
                         }
                     }
                     else
-                    { 
-                    log.MSG(tex, usuarios[x].name);
+                    {
+                        Logger.MSG(tex, usuarios[x].name);
                     }
                     break;
                 }

@@ -1,13 +1,7 @@
-﻿using System;
-using Chat.Log;
-using Chat.Global;
+﻿using Chat.Global;
+using Log;
 using Chat.Packets;
-using System.Configuration;
-
-using System.IO;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
+using System;
 using System.Threading;
 
 namespace Chat
@@ -16,27 +10,28 @@ namespace Chat
     {
         public static void Main(string[] args)
         {
+            Console.Title = "Chat Server";
             try
-            { 
-            Listener server = new Listener();
-            HandleMessage hdc = new HandleMessage();
-            Thread serverthd = new Thread(() => server.Listen());
-            serverthd.Start();
-            Thread datahnd = new Thread(() => hdc.Messages(server));
-            datahnd.Start();
-
-            while(true)
             {
-                Thread.Sleep(100);
+                Listener server = new Listener();
+                HandleMessage hdc = new HandleMessage();
+                Thread serverthd = new Thread(() => server.Listen());
+                serverthd.Start();
+                Thread datahnd = new Thread(() => hdc.Messages(server));
+                datahnd.Start();
+                Console.Write("Servidor Iniciado");
+                while (true)
+                {
+                    Thread.Sleep(100);
+                }
             }
-            }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                log.Error(ex.ToString());
+                Logger.Error(ex.ToString());
             }
         }
 
     }
 
-    
+
 }
