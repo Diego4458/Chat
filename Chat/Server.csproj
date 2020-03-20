@@ -95,9 +95,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Log\Log.csproj">
-      <Project>{cbdc3b16-f1a3-49b1-b2f7-776a2251d8a0}</Project>
-      <Name>Log</Name>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{dd2f0c5a-6b4a-4498-8792-b6e75f096911}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetworkBasics\NetworkBasics.csproj">
+      <Project>{61c62611-c3de-4b51-9c3e-31b3fc518dc7}</Project>
+      <Name>NetworkBasics</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

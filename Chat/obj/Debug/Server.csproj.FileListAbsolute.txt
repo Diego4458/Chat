@@ -1,0 +1,13 @@
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.exe
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.pdb
+C:\Devs\C#\Chat\Chat\bin\Debug\Global.dll
+C:\Devs\C#\Chat\Chat\bin\Debug\NetworkBasics.dll
+C:\Devs\C#\Chat\Chat\bin\Debug\Global.pdb
+C:\Devs\C#\Chat\Chat\bin\Debug\NetworkBasics.pdb
+C:\Devs\C#\Chat\Chat\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+C:\Devs\C#\Chat\Chat\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Devs\C#\Chat\Chat\obj\Debug\Server.csproj.CopyComplete
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.exe
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.pdb

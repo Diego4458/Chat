@@ -1,5 +1,5 @@
 ﻿using Chat.Global;
-using Log;
+using Global;
 using Chat.Packets;
 using System;
 using System.Threading;
@@ -19,7 +19,7 @@ namespace Chat
                 serverthd.Start();
                 Thread datahnd = new Thread(() => hdc.Messages(server));
                 datahnd.Start();
-                Console.Write("Servidor Iniciado");
+                Console.WriteLine("Servidor Iniciado");
                 while (true)
                 {
                     Thread.Sleep(100);
@@ -27,7 +27,7 @@ namespace Chat
             }
             catch (Exception ex)
             {
-                Logger.Error(ex.ToString());
+                Debug.Error(ex.ToString());
             }
         }
 

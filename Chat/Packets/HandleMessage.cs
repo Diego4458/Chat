@@ -1,5 +1,6 @@
 ﻿using Chat.Global;
-using Log;
+using Global;
+using NetworkBasics.Packets;
 using System;
 using System.Text;
 
@@ -22,42 +23,22 @@ namespace Chat.Packets
 
         private void Packets_DataReceivedEvent(object sender, ReceiveDataArgs args)
         {
-            string tex = Encoding.ASCII.GetString(args.ReivedBytes);
-            Logger.Warn(args.ReivedBytes.ToString());
-            for (int x = 0; usuarios.Length > x; x++)
+            PacketIn Data = new PacketIn();
+            Data.ReadPacket(args.ReivedBytes);
+            int PacketNumb = Data.ReadInt();
+            switch (PacketNumb)
             {
-                if (usuarios[x].name == null)
-                {
-                    usuarios[x].name = tex;
-                    usuarios[x].port = args.port;
-                    break;
-                }
-                else if (usuarios[x].port == args.port)
-                {
-                    if (tex.Contains("/"))
+                case 1:
                     {
-                        if (tex.Contains("CD"))
-                        {
-                            for (int y = 0; usuarios.Length > y; y++)
-                            {
-                                if (usuarios[y].name != null)
-                                {
-                                    Console.WriteLine("{0} = {1}", y.ToString(), usuarios[y].name);
-                                }
-                            }
-
-                        }
-                    }
-                    else
-                    {
-                        Logger.MSG(tex, usuarios[x].name);
+                        Debug.Log(string.Format("Novo Usuario: {0}",Data.ReadString()));
                     }
                     break;
-                }
+                default:
+                    {
+                        Debug.Warn(string.Format("Package Sem Dados: {0}", PacketNumb));
+                    }
+                    break;
             }
-            //string a = Encoding.ASCII.GetString(args.ReivedBytes);
-            // log.MSG(a, args.port);
-            //Console.WriteLine("Received Message From[{0}:{1}]:\r\n{2}",args.Ipadress,args.port,Encoding.ASCII.GetString(args.ReivedBytes));
         }
     }
 }

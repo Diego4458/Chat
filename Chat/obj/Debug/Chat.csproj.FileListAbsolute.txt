@@ -9,3 +9,14 @@ C:\Users\Diego\source\repos\Chat\Chat\bin\Debug\Log.pdb
 C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.csproj.CopyComplete
 C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.exe
 C:\Users\Diego\source\repos\Chat\Chat\obj\Debug\Chat.pdb
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.csproj.GenerateResource.cache
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.exe
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.pdb
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.exe
+C:\Devs\C#\Chat\Chat\bin\Debug\Chat.pdb
+C:\Devs\C#\Chat\Chat\bin\Debug\Global.dll
+C:\Devs\C#\Chat\Chat\bin\Debug\Global.pdb
+C:\Devs\C#\Chat\Chat\obj\Debug\Chat.csproj.CopyComplete

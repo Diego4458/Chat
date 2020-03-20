@@ -7,3 +7,14 @@ C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.csprojAssemblyReference
 C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Log.dll
 C:\Users\Diego\source\repos\Chat\Client\bin\Debug\Log.pdb
 C:\Users\Diego\source\repos\Chat\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Devs\C#\Chat\Client\bin\Debug\Client.exe.config
+C:\Devs\C#\Chat\Client\bin\Debug\Client.exe
+C:\Devs\C#\Chat\Client\bin\Debug\Client.pdb
+C:\Devs\C#\Chat\Client\bin\Debug\Global.dll
+C:\Devs\C#\Chat\Client\bin\Debug\Global.pdb
+C:\Devs\C#\Chat\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Devs\C#\Chat\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Devs\C#\Chat\Client\obj\Debug\Client.exe
+C:\Devs\C#\Chat\Client\obj\Debug\Client.pdb
+C:\Devs\C#\Chat\Client\bin\Debug\NetworkBasics.dll
+C:\Devs\C#\Chat\Client\bin\Debug\NetworkBasics.pdb

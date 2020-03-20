@@ -1,0 +1,5 @@
+C:\Devs\C#\Chat\Global\bin\Debug\Global.dll
+C:\Devs\C#\Chat\Global\bin\Debug\Global.pdb
+C:\Devs\C#\Chat\Global\obj\Debug\Global.dll
+C:\Devs\C#\Chat\Global\obj\Debug\Global.pdb
+C:\Devs\C#\Chat\Global\obj\Debug\Global.csprojAssemblyReference.cache

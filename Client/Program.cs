@@ -1,13 +1,12 @@
 ﻿using System;
-using Log;
+using Global;
 using System.Configuration;
-using System.IO;
 using System.Net;
-using System.Net.Sockets;
 using System.Text;
-using System.Threading;
+using NetworkBasics.Packets;
+using NetworkBasics;
 
-namespace Client
+namespace client
 {
     class Program
     {
@@ -19,26 +18,21 @@ namespace Client
 
             Config_load();
             IPEndPoint ep = new IPEndPoint(IPAddress.Parse(ip), port);
-            UdpClient client = new UdpClient();
-            Logger.Debug(ep.ToString());
-            client.Connect(ep);
+            Debug.Log(ep.ToString());
+            Client Connection = new Client(ep);
             Console.WriteLine("Digite Seu Nome");
-            string a = Console.ReadLine();
-            if (a.Length != 0)
-            {
-                byte[] packet = Encoding.ASCII.GetBytes(a);
-                client.Send(packet, packet.Length);
-            }
-            while (true)
+            PacketOut teste = new PacketOut();
+            teste.WriteInt(1);
+            teste.WriteString(Console.ReadLine());
+            Connection.SendPacket(teste);
+            while (Connection.ImAlive)
             {
                 Console.Clear();
                 Console.Write(">>");
-                a =Console.ReadLine();
-                if(a.Length !=0)
-                {  
-                    byte[] packet = Encoding.ASCII.GetBytes(a);
-                    client.Send(packet, packet.Length);
-                }
+                teste = new PacketOut();
+                teste.WriteInt(2);
+                teste.WriteString(Console.ReadLine());
+                Connection.SendPacket(teste);
             }
 
             
@@ -53,7 +47,7 @@ namespace Client
             }
             catch (Exception)
             {
-                Logger.Error("Erro Ao Tentar Iniciar o Servidor");
+                Debug.Error("Erro Ao Tentar Iniciar o Servidor");
             }
         }
     }

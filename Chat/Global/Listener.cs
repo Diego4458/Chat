@@ -1,6 +1,6 @@
 ﻿
 using System;
-using Log;
+using Global;
 using System.Configuration;
 using System.Net;
 using System.Net.Sockets;
@@ -49,7 +49,7 @@ namespace Chat.Global
             }
             catch (Exception)
             {
-                Logger.Error("Erro Ao Tentar Iniciar o Servidor");
+                Debug.Error("Erro Ao Tentar Iniciar o Servidor");
             }
         }
     }

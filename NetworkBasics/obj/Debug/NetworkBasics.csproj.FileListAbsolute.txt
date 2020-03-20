@@ -1,0 +1,5 @@
+C:\Devs\C#\Chat\NetworkBasics\bin\Debug\NetworkBasics.dll
+C:\Devs\C#\Chat\NetworkBasics\bin\Debug\NetworkBasics.pdb
+C:\Devs\C#\Chat\NetworkBasics\obj\Debug\NetworkBasics.csprojAssemblyReference.cache
+C:\Devs\C#\Chat\NetworkBasics\obj\Debug\NetworkBasics.dll
+C:\Devs\C#\Chat\NetworkBasics\obj\Debug\NetworkBasics.pdb
